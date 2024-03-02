@@ -1,25 +1,19 @@
 {
-  "name": "blockchain",
+  "name": "@damnherzg/web3-blockchain",
   "version": "1.0.7",
-  "author": "Andreas Brekken <a@abrkn.com>",
+  "author": "damnherzg",
   "description": "node.js module to access the blockchain websocket api",
-  "contributors": [
-    {
-      "name": "Andreas Brekken",
-      "email": "a@abrkn.com"
-    }
-  ],
   "bin": {
     "blockchain": "./bin/blockchain.js"
   },
   "scripts": {
     "blockchain": "node ./bin/blockchain.js",
-    "test": "mocha"
+    "test": "echo `test`"
   },
   "main": "./lib/blockchain",
   "repository": {
     "type": "git",
-    "url": "https://github.com/abrkn/blockchain"
+    "url": "https://github.com/damnherzg/web3-blockchain"
   },
   "keywords": [
     "blockchain",
@@ -37,6 +31,10 @@
   },
   "license": "ISC",
   "engines": {
-    "node": ">=0.6"
+    "node": ">=18"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
   }
 }
